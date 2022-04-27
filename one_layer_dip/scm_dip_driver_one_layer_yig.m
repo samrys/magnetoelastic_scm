@@ -24,7 +24,7 @@ par.h0 = mp('.25');     %applied field
 par.g = mp('1.760859644')*mp('10^11'); %gyromagnetic ratio of an electron
 par.b2 = mp('1')*mp('7000000'); %Magnetoelastic coupling constant
 
-N = 16;
+N = 8;
 
 %Chebyshev differentiation matrices
 [D,~] = cheb(N-1);
@@ -60,12 +60,11 @@ end
     
 
   kplot = double(kv);
-    
+   
+% Use these lines to save the data
+
 %      data_dir = ['C:\Users\samry\Documents\MATLAB\Elastic\magnetoelastics_paper\data_v2\one_layer_dip_yig_N_16_b2_zero_v2.mat'];
 %     save(data_dir,'par','wlong','wmag','wtran','kplot','N');
-
-%      data_dir = ['C:\Users\samry\Documents\MATLAB\Elastic\magnetoelastics_paper\data\one_layer_dip_yig_N_12_b2_p1.mat'];
- 
  
      %% Create figure
  %    load(data_dir,'par','wlong','wmag','wtran','kplot','N');
